@@ -1,0 +1,152 @@
+
+[31m~*~ USING CENTRALITY TABLE FOR PbPb 2018 ~*~[0m
+
+DEBUG 2018-12-01 08:16:20,052: 	 Executing command: 'submit'
+DEBUG 2018-12-01 08:16:20,053: 	 Found CRAB cache file /afs/cern.ch/user/p/prabhat/.crab3
+DEBUG 2018-12-01 08:16:20,066: 	 Checking credentials
+DEBUG 2018-12-01 08:16:20,068: 	 Found proxy file /tmp/x509up_u36946
+DEBUG 2018-12-01 08:16:20,068: 	 Getting proxy life time left
+DEBUG 2018-12-01 08:16:20,984: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u36946 -timeleft
+ output : 86380
+
+ error: 
+ retcode : 0
+DEBUG 2018-12-01 08:16:21,899: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u36946 -actimeleft
+ output : 86379
+
+ error: 
+ retcode : 0
+DEBUG 2018-12-01 08:16:21,900: 	 Proxy valid for 23:59:40 hours
+DEBUG 2018-12-01 08:16:21,901: 	 Will use CRAB Analysis plugin (i.e. will run an analysis job type).
+DEBUG 2018-12-01 08:16:22,025: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=prabhat/CN=665656/CN=Prabhat Ranjan Pujahari
+
+ error: 
+ retcode : 0
+DEBUG 2018-12-01 08:16:22,025: 	 Checking credentials
+DEBUG 2018-12-01 08:16:22,026: 	 Found proxy file /tmp/x509up_u36946
+DEBUG 2018-12-01 08:16:22,026: 	 Getting proxy life time left
+DEBUG 2018-12-01 08:16:22,834: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u36946 -timeleft
+ output : 86378
+
+ error: 
+ retcode : 0
+DEBUG 2018-12-01 08:16:23,643: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u36946 -actimeleft
+ output : 86377
+
+ error: 
+ retcode : 0
+DEBUG 2018-12-01 08:16:23,643: 	 Proxy valid for 23:59:38 hours
+DEBUG 2018-12-01 08:16:24,449: 	 Executing : 
+ command : env X509_USER_PROXY=/tmp/x509up_u36946 voms-proxy-info -fqan
+ output : /cms/Role=NULL/Capability=NULL
+
+ error: 
+ retcode : 0
+DEBUG 2018-12-01 08:16:25,964: 	 Registering user credentials for server /DC=ch/DC=cern/OU=computers/CN=vocms(052|058|030|0118|0105|0109).cern.ch|/DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod)-tw(02|01).cern.ch
+DEBUG 2018-12-01 08:16:26,078: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=prabhat/CN=665656/CN=Prabhat Ranjan Pujahari
+
+ error: 
+ retcode : 0
+DEBUG 2018-12-01 08:16:26,078: 	 Getting myproxy life time left for myproxy.cern.ch
+DEBUG 2018-12-01 08:16:26,078: 	 Calculating hash of /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=prabhat/CN=665656/CN=Prabhat Ranjan Pujahari_cmsweb.cern.ch for credential name
+DEBUG 2018-12-01 08:16:26,283: 	 Executing : 
+ command : myproxy-info -l f7df78ce5917e56ba6928e0b2bdbc93f09151c90 -s myproxy.cern.ch
+ output : username: f7df78ce5917e56ba6928e0b2bdbc93f09151c90
+owner: /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=prabhat/CN=665656/CN=Prabhat Ranjan Pujahari
+  renewal policy: /DC=ch/DC=cern/OU=computers/CN=vocms(052|058|030|0118|0105|0109).cern.ch|/DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod)-tw(02|01).cern.ch
+  trusted retrieval policy: /DC=ch/DC=cern/OU=computers/CN=vocms(052|058|030|0118|0105|0109).cern.ch|/DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod)-tw(02|01).cern.ch
+  timeleft: 632:59:34  (26.4 days)
+
+ error: 
+ retcode : 0
+DEBUG 2018-12-01 08:16:26,285: 	 Myproxy is valid: 2278774
+DEBUG 2018-12-01 08:16:26,285: 	 Command use: submit
+DEBUG 2018-12-01 08:16:26,285: 	 Options use: ['--config', <WMCore.Configuration.Configuration object at 0x7f3355c4d3d0>]
+DEBUG 2018-12-01 08:16:26,685: 	 CRABClient version: 3.3.1809
+DEBUG 2018-12-01 08:16:26,685: 	 Instance is prod
+DEBUG 2018-12-01 08:16:26,685: 	 Server base url is cmsweb.cern.ch
+DEBUG 2018-12-01 08:16:26,685: 	 Command url /crabserver/prod/workflow
+DEBUG 2018-12-01 08:16:26,685: 	 Started submission
+DEBUG 2018-12-01 08:16:26,685: 	 Working on /afs/cern.ch/user/p/prabhat/CMSSW_10_3_1/src/Analyzers/ChargeDepAndPtCorr/crab/Ana_QAplots_PbPb2018data_Cent3035_Dec01_NewBin/crab_PbPb2015_pixelReReco_chgdepcorr_std_central_v1
+DEBUG 2018-12-01 08:16:27,245: 	 Loading required information from the environment
+DEBUG 2018-12-01 08:16:27,245: 	 Found CMSSW_10_3_1 for slc6_amd64_gcc700 with base /afs/cern.ch/user/p/prabhat/CMSSW_10_3_1
+DEBUG 2018-12-01 08:16:27,245: 	 Loading required information from the environment
+DEBUG 2018-12-01 08:16:27,245: 	 Found CMSSW_10_3_1 for slc6_amd64_gcc700 with base /afs/cern.ch/user/p/prabhat/CMSSW_10_3_1
+DEBUG 2018-12-01 08:16:27,283: 	 UNIQUE NAME: tarUUID f3de915a-22c0-43f5-8cb3-0de0dfc15d2e 
+DEBUG 2018-12-01 08:16:27,284: 	 self.config: from WMCore.Configuration import Configuration
+config = Configuration()
+config.section_('General')
+config.General.transferLogs = False
+config.General.transferOutputs = True
+config.General.workArea = 'Ana_QAplots_PbPb2018data_Cent3035_Dec01_NewBin'
+config.General.requestName = 'PbPb2015_pixelReReco_chgdepcorr_std_central_v1'
+config.section_('JobType')
+config.JobType.psetName = '../cfg/chargedepptcorr_central_cfg.py'
+config.JobType.pluginName = 'Analysis'
+config.JobType.maxMemoryMB = 4000
+config.section_('Data')
+config.Data.inputDataset = '/HIMinimumBias3/HIRun2018A-PromptReco-v1/AOD'
+config.Data.outputDatasetTag = 'Ana_QAplots_PbPb2018_Dec01_newBin_v1'
+config.Data.publication = False
+config.Data.unitsPerJob = 10
+config.Data.splitting = 'LumiBased'
+config.Data.inputDBS = 'global'
+config.Data.outLFNDirBase = '/store/user/prabhat/'
+config.Data.totalUnits = -1
+config.section_('Site')
+config.Site.storageSite = 'T2_IN_TIFR'
+config.section_('User')
+config.section_('Debug')
+
+DEBUG 2018-12-01 08:16:27,284: 	 self.config.JobType.psetName: ../cfg/chargedepptcorr_central_cfg.py
+INFO 2018-12-01 08:16:27,285: 	 Importing CMSSW configuration ../cfg/chargedepptcorr_central_cfg.py
+INFO 2018-12-01 08:16:32,167: 	 Finished importing CMSSW configuration ../cfg/chargedepptcorr_central_cfg.py
+DEBUG 2018-12-01 08:16:32,167: 	 Writing CMSSW configuration to /afs/cern.ch/user/p/prabhat/CMSSW_10_3_1/src/Analyzers/ChargeDepAndPtCorr/crab/Ana_QAplots_PbPb2018data_Cent3035_Dec01_NewBin/crab_PbPb2015_pixelReReco_chgdepcorr_std_central_v1/inputs/PSet.py
+DEBUG 2018-12-01 08:16:34,320: 	 The following EDM output files will be collected: []
+DEBUG 2018-12-01 08:16:34,320: 	 The following TFile output files will be collected: ['chargeptdepcorr_central.root']
+DEBUG 2018-12-01 08:16:34,320: 	 The following user output files will be collected: []
+DEBUG 2018-12-01 08:16:34,320: 	 Loading required information from the environment
+DEBUG 2018-12-01 08:16:34,320: 	 Found CMSSW_10_3_1 for slc6_amd64_gcc700 with base /afs/cern.ch/user/p/prabhat/CMSSW_10_3_1
+DEBUG 2018-12-01 08:16:34,320: 	 Making tarball in /afs/cern.ch/user/p/prabhat/CMSSW_10_3_1/src/Analyzers/ChargeDepAndPtCorr/crab/Ana_QAplots_PbPb2018data_Cent3035_Dec01_NewBin/crab_PbPb2015_pixelReReco_chgdepcorr_std_central_v1/inputs/f3de915a-22c0-43f5-8cb3-0de0dfc15d2edefault.tgz
+DEBUG 2018-12-01 08:16:34,330: 	 Checking directory /afs/cern.ch/user/p/prabhat/CMSSW_10_3_1/lib
+DEBUG 2018-12-01 08:16:34,330: 	 Adding directory /afs/cern.ch/user/p/prabhat/CMSSW_10_3_1/lib to tarball
+DEBUG 2018-12-01 08:16:35,129: 	 Checking directory /afs/cern.ch/user/p/prabhat/CMSSW_10_3_1/biglib
+DEBUG 2018-12-01 08:16:35,129: 	 Adding directory /afs/cern.ch/user/p/prabhat/CMSSW_10_3_1/biglib to tarball
+DEBUG 2018-12-01 08:16:35,130: 	 Checking directory /afs/cern.ch/user/p/prabhat/CMSSW_10_3_1/module
+DEBUG 2018-12-01 08:16:35,487: 	 Adding data directory /afs/cern.ch/user/p/prabhat/CMSSW_10_3_1/src/Analyzers/ChargeDepAndPtCorr/data to tarball
+DEBUG 2018-12-01 08:16:35,542: 	 Adding data directory /afs/cern.ch/user/p/prabhat/CMSSW_10_3_1/src/Analyzers/ChargeDepAndPtCorr/interface to tarball
+DEBUG 2018-12-01 08:16:35,607: 	 Adding data directory /afs/cern.ch/user/p/prabhat/CMSSW_10_3_1/src/Analyzers/Cumulants/data to tarball
+DEBUG 2018-12-01 08:16:35,624: 	 Adding data directory /afs/cern.ch/user/p/prabhat/CMSSW_10_3_1/src/Analyzers/Cumulants/interface to tarball
+DEBUG 2018-12-01 08:16:35,879: 	 Adding data directory /afs/cern.ch/user/p/prabhat/CMSSW_10_3_1/src/Analyzers/NtrkDistribution/data to tarball
+DEBUG 2018-12-01 08:16:35,896: 	 Adding data directory /afs/cern.ch/user/p/prabhat/CMSSW_10_3_1/src/Analyzers/NtrkDistribution/interface to tarball
+DEBUG 2018-12-01 08:16:35,902: 	 Adding data directory /afs/cern.ch/user/p/prabhat/CMSSW_10_3_1/src/HeavyIonsAnalysis/Configuration/data to tarball
+DEBUG 2018-12-01 08:16:35,938: 	 Adding data directory /afs/cern.ch/user/p/prabhat/CMSSW_10_3_1/src/HeavyIonsAnalysis/EventAnalysis/interface to tarball
+DEBUG 2018-12-01 08:16:35,942: 	 Adding data directory /afs/cern.ch/user/p/prabhat/CMSSW_10_3_1/src/HeavyIonsAnalysis/JetAnalysis/data to tarball
+DEBUG 2018-12-01 08:16:37,575: 	 Adding data directory /afs/cern.ch/user/p/prabhat/CMSSW_10_3_1/src/HeavyIonsAnalysis/JetAnalysis/interface to tarball
+DEBUG 2018-12-01 08:16:37,598: 	 Adding data directory /afs/cern.ch/user/p/prabhat/CMSSW_10_3_1/src/HeavyIonsAnalysis/MuonAnalysis/interface to tarball
+DEBUG 2018-12-01 08:16:37,601: 	 Adding data directory /afs/cern.ch/user/p/prabhat/CMSSW_10_3_1/src/HeavyIonsAnalysis/PhotonAnalysis/data to tarball
+DEBUG 2018-12-01 08:16:37,602: 	 Adding data directory /afs/cern.ch/user/p/prabhat/CMSSW_10_3_1/src/HeavyIonsAnalysis/PhotonAnalysis/interface to tarball
+DEBUG 2018-12-01 08:16:37,607: 	 Adding data directory /afs/cern.ch/user/p/prabhat/CMSSW_10_3_1/src/HeavyIonsAnalysis/TrackAnalysis/interface to tarball
+DEBUG 2018-12-01 08:16:37,609: 	 Adding data directory /afs/cern.ch/user/p/prabhat/CMSSW_10_3_1/src/HeavyIonsAnalysis/VertexAnalysis/interface to tarball
+DEBUG 2018-12-01 08:16:38,128: 	 Uploading archive /afs/cern.ch/user/p/prabhat/CMSSW_10_3_1/src/Analyzers/ChargeDepAndPtCorr/crab/Ana_QAplots_PbPb2018data_Cent3035_Dec01_NewBin/crab_PbPb2015_pixelReReco_chgdepcorr_std_central_v1/inputs/f3de915a-22c0-43f5-8cb3-0de0dfc15d2edefault.tgz (7.933594.1 MB) to the CRAB cache. Using URI https://cmsweb.cern.ch/crabcache
+DEBUG 2018-12-01 08:16:41,366: 	 Loading required information from the environment
+DEBUG 2018-12-01 08:16:41,366: 	 Found CMSSW_10_3_1 for slc6_amd64_gcc700 with base /afs/cern.ch/user/p/prabhat/CMSSW_10_3_1
+DEBUG 2018-12-01 08:16:41,366: 	 Making tarball in /afs/cern.ch/user/p/prabhat/CMSSW_10_3_1/src/Analyzers/ChargeDepAndPtCorr/crab/Ana_QAplots_PbPb2018data_Cent3035_Dec01_NewBin/crab_PbPb2015_pixelReReco_chgdepcorr_std_central_v1/inputs/debugFiles.tgz
+DEBUG 2018-12-01 08:16:41,371: 	 Uploading archive /afs/cern.ch/user/p/prabhat/CMSSW_10_3_1/src/Analyzers/ChargeDepAndPtCorr/crab/Ana_QAplots_PbPb2018data_Cent3035_Dec01_NewBin/crab_PbPb2015_pixelReReco_chgdepcorr_std_central_v1/inputs/debugFiles.tgz (3 KB) to the CRAB cache. Using URI https://cmsweb.cern.ch/crabcache
+DEBUG 2018-12-01 08:16:41,768: 	 Result uploading input files: 7a39ae7d9292c4bee36130ba123f453a274716677db0136baa3906ed47122ab7.tar.gz 
+INFO 2018-12-01 08:16:41,769: 	 Sending the request to the server
+DEBUG 2018-12-01 08:16:41,769: 	 Submitting {'maxjobruntime': 1250, 'extrajdl': [], 'ignorelocality': 0, 'savelogsflag': 0, 'useparent': 0, 'asyncdest': 'T2_IN_TIFR', 'algoargs': 10, 'cachefilename': '7a39ae7d9292c4bee36130ba123f453a274716677db0136baa3906ed47122ab7.tar.gz', 'numcores': 1, 'addoutputfiles': [], 'generator': 'pythia', 'maxmemory': 4000, 'publishdbsurl': 'https://cmsweb.cern.ch/dbs/prod/phys03/DBSWriter', 'priority': 10, 'jobsw': 'CMSSW_10_3_1', 'edmoutfiles': [], 'userfiles': [], 'primarydataset': '', 'inputdata': '/HIMinimumBias3/HIRun2018A-PromptReco-v1/AOD', 'lfn': '/store/user/prabhat/', 'dryrun': 0, 'workflow': 'crab_PbPb2015_pixelReReco_chgdepcorr_std_central_v1', 'cacheurl': u'https://cmsweb.cern.ch/crabcache', 'nonprodsw': 0, 'tfileoutfiles': ['chargeptdepcorr_central.root'], 'oneEventMode': 0, 'debugfilename': '783761bdb317e849ac7dc4d6067869b3700e6d944cab08ea005fb75bdbf0f668.tar.gz', 'saveoutput': 1, 'publication': 0, 'jobarch': 'slc6_amd64_gcc700', 'totalunits': -1, 'splitalgo': 'LumiBased', 'ignoreglobalblacklist': 0, 'nonvaliddata': 0, 'dbsurl': 'https://cmsweb.cern.ch/dbs/prod/global/DBSReader', 'publishgroupname': 0, 'jobtype': 'Analysis', 'publishname2': 'Ana_QAplots_PbPb2018_Dec01_newBin_v1'} 
+DEBUG 2018-12-01 08:16:41,769: 	 Encoded submit request: maxjobruntime=1250&ignorelocality=0&savelogsflag=0&useparent=0&asyncdest=T2_IN_TIFR&algoargs=10&cachefilename=7a39ae7d9292c4bee36130ba123f453a274716677db0136baa3906ed47122ab7.tar.gz&numcores=1&generator=pythia&maxmemory=4000&publishdbsurl=https%3A%2F%2Fcmsweb.cern.ch%2Fdbs%2Fprod%2Fphys03%2FDBSWriter&priority=10&jobsw=CMSSW_10_3_1&primarydataset=&inputdata=%2FHIMinimumBias3%2FHIRun2018A-PromptReco-v1%2FAOD&lfn=%2Fstore%2Fuser%2Fprabhat%2F&dryrun=0&workflow=crab_PbPb2015_pixelReReco_chgdepcorr_std_central_v1&cacheurl=https%3A%2F%2Fcmsweb.cern.ch%2Fcrabcache&nonprodsw=0&oneEventMode=0&debugfilename=783761bdb317e849ac7dc4d6067869b3700e6d944cab08ea005fb75bdbf0f668.tar.gz&saveoutput=1&publication=0&jobarch=slc6_amd64_gcc700&totalunits=-1&splitalgo=LumiBased&ignoreglobalblacklist=0&nonvaliddata=0&dbsurl=https%3A%2F%2Fcmsweb.cern.ch%2Fdbs%2Fprod%2Fglobal%2FDBSReader&publishgroupname=0&jobtype=Analysis&publishname2=Ana_QAplots_PbPb2018_Dec01_newBin_v1&tfileoutfiles=chargeptdepcorr_central.root
+DEBUG 2018-12-01 08:16:42,567: 	 Result: {u'result': [{u'RequestName': u'181201_071642:prabhat_crab_PbPb2015_pixelReReco_chgdepcorr_std_central_v1'}]}
+INFO 2018-12-01 08:16:42,569: 	 Success: Your task has been delivered to the CRAB3 server.
+INFO 2018-12-01 08:16:42,570: 	 Task name: 181201_071642:prabhat_crab_PbPb2015_pixelReReco_chgdepcorr_std_central_v1
+INFO 2018-12-01 08:16:42,570: 	 Please use 'crab status' to check how the submission process proceeds.
+DEBUG 2018-12-01 08:16:42,570: 	 About to return
